@@ -1,0 +1,163 @@
+/* === style.css === */
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Header */
+header {
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 100px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #7a1c1c;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+  color: #1f2c6c;
+}
+
+.btn-inscription {
+  background: #7a1c1c;
+  color: #fff !important;
+  padding: 8px 15px;
+  border-radius: 4px;
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #1f2c6c;
+  color: #fff;
+  padding: 60px 10%;
+  flex-wrap: wrap;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.hero-text p {
+  margin-bottom: 20px;
+}
+
+.hero-text .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid #fff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.hero-text .btn:hover {
+  background: #fff;
+  color: #1f2c6c;
+}
+
+.hero-image img {
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+/* Presentation */
+.presentation {
+  display: flex;
+  margin: 50px auto;
+  gap: 30px;
+}
+
+.sidebar ul {
+  list-style: none;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.sidebar ul li {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+  background: #f8f8f8;
+}
+
+.sidebar ul li.active,
+.sidebar ul li:hover {
+  background: #7a1c1c;
+  color: #fff;
+}
+
+.content h2 {
+  color: #1f2c6c;
+  margin-bottom: 15px;
+}
+
+.content ul li {
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #1f2c6c;
+  color: #fff;
+  margin-top: 50px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .presentation {
+    flex-direction: column;
+  }
+}
